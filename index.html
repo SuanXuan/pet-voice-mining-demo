@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Premium Pet Customer Voice Mining - Suzanne Tang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Customer Voice Mining Demo</p>
+      <h1>Premium Pet Accessories: China Entry Review Signals</h1>
+    </div>
+    <div class="signature">
+      <span>Suzanne Tang</span>
+      <span>Cross-market research · Data-backed localization</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="kpi-grid" id="kpis"></section>
+
+    <section class="dashboard-grid">
+      <article class="panel panel-large">
+        <div class="panel-title">
+          <h2>Theme Frequency</h2>
+          <div class="segmented" role="group" aria-label="Market filter">
+            <button class="segment is-active" data-market="All">All</button>
+            <button class="segment" data-market="China">China</button>
+            <button class="segment" data-market="Overseas">Overseas</button>
+          </div>
+        </div>
+        <div id="themeBars" class="bar-list"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-title">
+          <h2>Sentiment Split</h2>
+        </div>
+        <div id="sentimentChart" class="sentiment-chart"></div>
+      </article>
+    </section>
+
+    <section class="insight-grid">
+      <article class="panel">
+        <div class="panel-title">
+          <h2>Cross-Market Findings</h2>
+        </div>
+        <div id="insights" class="insight-list"></div>
+      </article>
+      <article class="panel">
+        <div class="panel-title">
+          <h2>China Entry Playbook</h2>
+        </div>
+        <div id="playbook" class="playbook-list"></div>
+      </article>
+    </section>
+
+    <section class="panel signal-panel">
+      <div class="panel-title">
+        <h2>Review Signal Table</h2>
+        <div class="filter-row">
+          <select id="clusterFilter" aria-label="Product cluster filter"></select>
+          <select id="themeFilter" aria-label="Theme filter"></select>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Market</th>
+              <th>Product</th>
+              <th>Theme</th>
+              <th>Evidence</th>
+              <th>Signal</th>
+              <th>China Implication</th>
+            </tr>
+          </thead>
+          <tbody id="signalRows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="data/review-signals.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
