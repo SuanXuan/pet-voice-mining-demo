@@ -1,2 +1,2 @@
-# Customer-Voice-Mining-Dashboard
-Customer Voice Mining Dashboard demo
+# pet-voice-mining-demo
+pet-voice-mining-demo
